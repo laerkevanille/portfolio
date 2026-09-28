@@ -1,4 +1,63 @@
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+body {
+  background-color: #d9125e;
+}
+
+header {
+  background-color: #d9125e;
+}
+
+h1 {
+  color: #37ebff;
+  font-family: "Gorditas", sans-serif;
+  font-size: 104px;
+  font-weight: 600;
+  line-height: 0.9em;
+  width: 80%;
+}
+h1 span {
+  color: #fff200;
+}
+
+header p {
+  color: #fff200;
+  font-family: "Contrail One", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content-wrapper {
+  padding: 0;
+  width: 94%;
+  margin: 3em auto;
+  border: 12px double black;
+  background-color: #fff200;
+}
+
+.content {
+  max-width: 100%;
+  background-color: skyblue;
+}
+
+.desk {
+  background-image: url(../img/background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 2.033;
+  width: 100%;
+}
+
+.objects {
+  position: absolute;
+}
+.objects .lamp {
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */
