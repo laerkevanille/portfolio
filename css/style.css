@@ -44,7 +44,7 @@ img {
 
 .content {
   max-width: 100%;
-  background-color: skyblue;
+  background-color: rgb(165, 224, 247);
 }
 
 .desk {
@@ -58,6 +58,28 @@ img {
 .objects {
   position: absolute;
 }
-.objects .lamp {
-  position: absolute;
+.objects #lamp {
+  position: relative;
+  height: 50vh;
+  top: 85px;
+  left: 900px;
+}
+.objects #lamp-switch {
+  position: relative;
+  height: 70px;
+  left: 1040px;
+  top: -100px;
+}
+.objects .pc {
+  max-width: 100%;
+}
+.objects .pc #pc {
+  position: relative;
+  left: 23%;
+  bottom: 342px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  width: 64vw;
 }/*# sourceMappingURL=style.css.map */
