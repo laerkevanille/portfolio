@@ -90,7 +90,6 @@ img {
   padding: 0;
 }
 .objects #lamp-switch img {
-  display: transparent;
   width: 1vw;
   height: auto;
 }
