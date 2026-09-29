@@ -69,14 +69,18 @@ img{
     }
 }
 
-.desk{
-    background-image: url(../img/background.png);
+#desk-bg{
+    background-image: url(../img/bg.png);
     background : {
         size: contain;
         repeat: no-repeat;
     }
     aspect-ratio: 2.033;
     width: 100%;
+
+    &.dark{
+        background-image: url(../img/bg-dark.png);
+    }
 }
 
 .objects{
@@ -85,18 +89,10 @@ img{
     aspect-ratio: 2.033;
     margin: 0 auto;
 
-    #lamp{
-        width: 14vw;
-        height: auto;
-        position: absolute;
-        right: 3%;
-        bottom: 20%;
-    }
-
     #lamp-switch{
         position: absolute;
-        top: 41%;
-        right: 7%;
+        top: 33.4%;
+        right: 12%;
         z-index: 100;
         border: none;
         background-color: transparent;
@@ -105,8 +101,9 @@ img{
         padding: 0;
 
         img{
-        width: 50%;
-        height: auto;
+            display: transparent;
+            width: 1vw;
+            height: auto;
         }
 
         &:hover{
