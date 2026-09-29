@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/619f162d00.js" crossorigin="anonymous"></script>
     <script type="module" src="js/app.js"></script>
 </head>
-<body>
+<body class="toggle">
 
     <header>
         <h1>LÆRKE VAN<span>i</span>LLE</h1>
@@ -20,14 +20,14 @@
 
     <main>
 
-        <section class="content-wrapper">
-            <div class="content">
-                <div class="desk">
+        <section class="content-wrapper" class="toggle" id="content-wrapper">
+            <div class="content" class="toggle" id="content">
+                <div class="desk" class="toggle">
 
                     <!--<img src="img/background2.png" alt="desk in front of a window" id="desk-bg" aria-hidden="true">-->
                     <div class="objects">
-                        <div class="lamp">
-                            <img src="img/lamp-switch.png" alt="lampekontakt" id="lamp-switch">
+                        <div class="lamp" draggable="true">
+                            <button id="lamp-switch" class="toggle"><img src="img/lamp-switch.png" alt="lampekontakt"></button>
                             <img src="img/lamp.png" alt="skrivebordslampe" id="lamp">
                         </div>
                         <div class="pc">

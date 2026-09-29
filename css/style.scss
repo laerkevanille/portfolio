@@ -5,11 +5,18 @@
 
 body{
     background-color: #d9125e;
+
+    &.dark{
+        background-color: #250310;
+    }
 }
 
-header{
+/*header{
     background-color: #d9125e;
-}
+    &.dark{
+        background-color: #250310;
+    }
+}*/
 
 h1{
     color: #37ebff;
@@ -37,6 +44,7 @@ header p{
 
 img{
     max-width: 100%;
+    object-fit: contain;
 }
 
 .content-wrapper{
@@ -45,11 +53,20 @@ img{
     margin: 3em auto;
     border: 12px double black;
     background-color: #fff200;
+
+    &.dark{
+        border-color:#ac3f00;
+        background-color: transparent;
+    }
 }
 
 .content{
     max-width: 100%;
     background-color: rgb(165, 224, 247);
+
+    &.dark{
+        background-color: #0c061c;
+    }
 }
 
 .desk{
@@ -64,31 +81,48 @@ img{
 
 .objects{
     position: absolute;
+    width: 94%;
+    aspect-ratio: 2.033;
+    margin: 0 auto;
 
     #lamp{
-        position: relative;
-        height: 50vh;
-        top: 85px;
-        left: 900px;
+        width: 14vw;
+        height: auto;
+        position: absolute;
+        right: 3%;
+        bottom: 20%;
     }
 
     #lamp-switch{
-        position: relative;
-        height: 70px;
-        left: 1040px;
-        top: -100px;
+        position: absolute;
+        top: 41%;
+        right: 7%;
+        z-index: 100;
+        border: none;
+        background-color: transparent;
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        img{
+        width: 50%;
+        height: auto;
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     .pc{
         max-width: 100%;
         
         #pc{
-            position: relative;
-            left: 23%;
-            bottom: 342px;
-            object-fit: cover;
-            object-position: top;
-            width: 64vw;
+            position: absolute;
+            width: 65vw;
+            height: auto;
+            left: 14%;
+            top: 9.3%;
         }
     }
 }
