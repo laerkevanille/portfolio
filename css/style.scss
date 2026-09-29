@@ -5,18 +5,12 @@
 
 body{
     background-color: #d9125e;
+    transition: 1s ease-in-out;
 
     &.dark{
         background-color: #250310;
     }
 }
-
-/*header{
-    background-color: #d9125e;
-    &.dark{
-        background-color: #250310;
-    }
-}*/
 
 h1{
     color: #37ebff;
@@ -53,6 +47,7 @@ img{
     margin: 3em auto;
     border: 12px double black;
     background-color: #fff200;
+    transition: 1s ease-in-out;
 
     &.dark{
         border-color:#ac3f00;
@@ -63,13 +58,14 @@ img{
 .content{
     max-width: 100%;
     background-color: rgb(165, 224, 247);
+    transition: 1s ease-in-out;
 
     &.dark{
         background-color: #0c061c;
     }
 }
 
-#desk-bg{
+.desk{
     background-image: url(../img/bg.png);
     background : {
         size: contain;
@@ -77,48 +73,37 @@ img{
     }
     aspect-ratio: 2.033;
     width: 100%;
+    transition: 0.9s ease-in-out;
 
     &.dark{
         background-image: url(../img/bg-dark.png);
     }
 }
 
-.objects{
+#lamp-switch{
     position: absolute;
-    width: 94%;
-    aspect-ratio: 2.033;
-    margin: 0 auto;
+    top: 61%;
+    right: 13%;
+    z-index: 100;
+    border: none;
+    background-color: transparent;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 1.6vw;
+    height: 70px;
 
-    #lamp-switch{
-        position: absolute;
-        top: 33.4%;
-        right: 12%;
-        z-index: 100;
-        border: none;
-        background-color: transparent;
-        display: block;
-        margin: 0;
-        padding: 0;
-
-        img{
-            width: 1vw;
-            height: auto;
-        }
-
-        &:hover{
-            cursor: pointer;
-        }
+    &:hover{
+        cursor: pointer;
     }
+}
 
-    .pc{
-        max-width: 100%;
-        
-        #pc{
-            position: absolute;
-            width: 65vw;
-            height: auto;
-            left: 14%;
-            top: 9.3%;
-        }
-    }
+.stage{
+    aspect-ratio: 1.733;
+    display: flex;
+    justify-self: center;
+    margin-left: 2.1%;
+    margin-top: 8%;
+    position: absolute;
+    width: 53.4vw;
 }
