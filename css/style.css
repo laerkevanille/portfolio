@@ -13,42 +13,52 @@ body.dark {
 
 header {
   display: flex;
+  flex-direction: column;
+  margin: 24px 3% 0 3%;
 }
-header .title-group {
-  width: 80%;
+header .header-top {
+  display: flex;
+  justify-content: space-between;
 }
-header .title-group h1 {
+header .header-top h1 a {
   color: #37ebff;
   font-family: "Gorditas", sans-serif;
   font-size: 104px;
   font-weight: 600;
   line-height: 0.9em;
-  margin: 24px 0 0 3%;
+  text-decoration: none;
 }
-header .title-group h1 span {
+header .header-top h1 a span {
   color: #fff200;
 }
-header .title-group p {
-  color: #fff200;
-  font-family: "Contrail One", sans-serif;
-  font-size: 30px;
-  font-weight: 500;
-}
-header .title-group div {
+header .header-topright {
+  align-items: flex-end;
   display: flex;
-  justify-content: space-between;
-  margin: 16px 0 0 3%;
-  width: 70%;
+  flex-direction: column;
 }
-header .title-group div button {
+header .header-topright nav {
+  margin-top: 1.6em;
+}
+header .header-topright nav li {
+  display: inline-block;
+  list-style: none;
+}
+header .header-topright nav li a {
+  display: block;
+  text-decoration: none;
+}
+header .header-topright button {
   background-color: #d97b92;
   border: 2px solid #fff200;
   border-radius: 100px;
   display: flex;
-  margin-right: 5%;
+  height: -moz-fit-content;
+  height: fit-content;
   transition: 1s ease-in-out;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-header .title-group div button div {
+header .header-topright button div {
   aspect-ratio: 1/1;
   border-radius: 50px;
   display: flex;
@@ -60,36 +70,36 @@ header .title-group div button div {
   text-align: center;
   transition: 0.9s ease-in-out;
 }
-header .title-group div button div.sun {
+header .header-topright button div.sun {
   background-color: #f3b6cd;
   color: #6d092f;
   margin-left: 0;
 }
-header .title-group div button div.moon {
+header .header-topright button div.moon {
   color: #f3f3f3;
   margin-right: 0;
 }
-header .title-group div button:hover {
+header .header-topright button:hover {
   cursor: pointer;
 }
-header .title-group div button.dark {
+header .header-topright button.dark {
   background-color: #331b24;
   border-color: #ac3f00;
 }
-header .title-group div button.dark .sun {
+header .header-topright button.dark .sun {
   background-color: transparent;
   color: #96868c;
 }
-header .title-group div button.dark .moon {
+header .header-topright button.dark .moon {
   background-color: #644c55;
   color: #180005;
 }
-header nav {
-  margin-right: 3%;
-}
-header nav li {
-  display: inline-flex;
-  list-style: none;
+header p {
+  color: #fff200;
+  font-family: "Contrail One", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 16px;
 }
 
 img {

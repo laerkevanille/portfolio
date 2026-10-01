@@ -15,11 +15,14 @@ body{
 
 header{
     display: flex;
+    flex-direction: column;
+    margin: 24px 3% 0 3%;
 
-    .title-group{
-        width: 80%;
+    .header-top{
+        display: flex;
+        justify-content: space-between;
 
-        h1{
+        h1 a{
             color: #37ebff;
             font : {
                 family: "Gorditas", sans-serif;
@@ -27,91 +30,98 @@ header{
                 weight: 600;
             }
             line-height: 0.9em;
-            margin: 24px 0 0 3%;
+            text-decoration: none;
 
             span{
                 color: #fff200;
             }
         }
+    }
 
-        p{
-            color: #fff200;
-            font : {
-                family: "Contrail One", sans-serif;
-                size: 30px;
-                weight: 500;
+    .header-topright{
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+
+        nav{
+            margin-top: 1.6em;
+
+            li{
+                display: inline-block;
+                list-style: none;
+
+                a{
+                    display: block;
+                    text-decoration: none;
+                }
             }
         }
 
-        div{
+        button{
+            background-color: #d97b92;
+            border: 2px solid #fff200;
+            border-radius: 100px;
             display: flex;
-            justify-content: space-between;
-            margin: 16px 0 0 3%; 
-            width: 70%;
+            height: fit-content;
+            transition: 1s ease-in-out;
+            width: fit-content;
 
-            button{
-                background-color: #d97b92;
-                border: 2px solid #fff200;
-                border-radius: 100px;
+            div{
+                aspect-ratio: 1/1;
+                border-radius: 50px;
                 display: flex;
-                margin-right: 5%;
-                transition: 1s ease-in-out;
+                font-size: 16px;
+                justify-content: center;
+                align-items: center;
+                margin: 3px;
+                padding: 0.3em;
+                text-align: center;
+                transition: 0.9s ease-in-out;
 
-                div{
-                    aspect-ratio: 1/1;
-                    border-radius: 50px;
-                    display: flex;
-                    font-size: 16px;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 3px;
-                    padding: 0.3em;
-                    text-align: center;
-                    transition: 0.9s ease-in-out;
-
-                    &.sun{
-                        background-color: #f3b6cd;
-                        color: #6d092f;
-                        margin-left: 0;
-                    }
-
-                    &.moon{
-                        color: #f3f3f3;
-                        margin-right: 0;
-                    }
+                &.sun{
+                    background-color: #f3b6cd;
+                    color: #6d092f;
+                    margin-left: 0;
                 }
 
-                &:hover{
-                    cursor: pointer;
+                &.moon{
+                    color: #f3f3f3;
+                    margin-right: 0;
+                }
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            &.dark{
+                background-color: #331b24;
+                border-color: #ac3f00;
+
+                .sun{
+                    background-color: transparent;
+                    color: #96868c;
                 }
 
-                &.dark{
-                    background-color: #331b24;
-                    border-color: #ac3f00;
-
-                    .sun{
-                        background-color: transparent;
-                        color: #96868c;
-                    }
-
-                    .moon{
-                        background-color: #644c55;
-                        color: #180005;
-                    }
+                .moon{
+                    background-color: #644c55;
+                    color: #180005;
                 }
             }
         }
     }
 
-    nav{
-        margin-right: 3%;
-
-        li{
-            display: inline-flex;
-            list-style: none;
+    p{
+        color: #fff200;
+        font : {
+            family: "Contrail One", sans-serif;
+            size: 30px;
+            weight: 500;
         }
+        margin-top: 16px;
     }
 }
+
 
 img{
     max-width: 100%;
