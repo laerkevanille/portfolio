@@ -10,11 +10,13 @@ export class ProjectGallery {
         gallery.classList.add('project-gallery');
         this.projects.forEach(project => {
             const projectCard = new ProjectCard(
-                project.type,
+                project.types,
+                project.images,
                 project.title,
+                project.url,
                 project.description,
                 project.technologies,
-                project.images
+                project.readMore
             );
             gallery.appendChild(projectCard.render());  
         }

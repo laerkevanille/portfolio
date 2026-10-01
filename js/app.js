@@ -22,7 +22,8 @@ function toggleTheme() {
     document.getElementById("content-wrapper").classList.toggle("dark");
     document.getElementById("content").classList.toggle("dark");
     document.getElementById("desk-bg").classList.toggle("dark");
-}
+    document.getElementById("nav").classList.toggle("dark");
+};
 
 toggleBtns.forEach(btn => {
     btn.addEventListener("click", toggleTheme);
@@ -36,10 +37,30 @@ const showStage = (stageId, content) => {
     section.classList.add("stage", "active");
 
     const div = document.createElement("div");
+    div.classList.add("stage-content");
     div.id = stageId;
 
     if (content != undefined) {
         div.appendChild(content);
+    }
+
+    if (stageId !== "folders") {
+        const homeBtn = document.createElement("button");
+        homeBtn.classList.add("home-btn");
+
+        const icon = document.createElement("i");
+        icon.classList.add("fa-solid", "fa-house");
+
+        homeBtn.appendChild(icon);
+
+        homeBtn.addEventListener("click", () => {
+            showStage(
+                "folders",
+                categoryGallery.render()
+            );
+        });
+
+        div.appendChild(homeBtn);
     }
 
     section.appendChild(div);
