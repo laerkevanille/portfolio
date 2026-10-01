@@ -11,23 +11,85 @@ body.dark {
   background-color: #250310;
 }
 
-h1 {
+header {
+  display: flex;
+}
+header .title-group {
+  width: 80%;
+}
+header .title-group h1 {
   color: #37ebff;
   font-family: "Gorditas", sans-serif;
   font-size: 104px;
   font-weight: 600;
   line-height: 0.9em;
-  width: 80%;
+  margin: 24px 0 0 3%;
 }
-h1 span {
+header .title-group h1 span {
   color: #fff200;
 }
-
-header p {
+header .title-group p {
   color: #fff200;
   font-family: "Contrail One", sans-serif;
   font-size: 30px;
   font-weight: 500;
+}
+header .title-group div {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0 0 3%;
+  width: 70%;
+}
+header .title-group div button {
+  background-color: #d97b92;
+  border: 2px solid #fff200;
+  border-radius: 100px;
+  display: flex;
+  margin-right: 5%;
+  transition: 1s ease-in-out;
+}
+header .title-group div button div {
+  aspect-ratio: 1/1;
+  border-radius: 50px;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  padding: 0.3em;
+  text-align: center;
+  transition: 0.9s ease-in-out;
+}
+header .title-group div button div.sun {
+  background-color: #f3b6cd;
+  color: #6d092f;
+  margin-left: 0;
+}
+header .title-group div button div.moon {
+  color: #f3f3f3;
+  margin-right: 0;
+}
+header .title-group div button:hover {
+  cursor: pointer;
+}
+header .title-group div button.dark {
+  background-color: #331b24;
+  border-color: #ac3f00;
+}
+header .title-group div button.dark .sun {
+  background-color: transparent;
+  color: #96868c;
+}
+header .title-group div button.dark .moon {
+  background-color: #644c55;
+  color: #180005;
+}
+header nav {
+  margin-right: 3%;
+}
+header nav li {
+  display: inline-flex;
+  list-style: none;
 }
 
 img {
@@ -72,8 +134,8 @@ img {
 
 #lamp-switch {
   position: absolute;
-  top: 61%;
-  right: 13%;
+  top: 68%;
+  right: 13.2%;
   z-index: 100;
   border: none;
   background-color: transparent;
@@ -89,10 +151,59 @@ img {
 
 .stage {
   aspect-ratio: 1.733;
-  display: flex;
+  display: none;
   justify-self: center;
   margin-left: 2.1%;
   margin-top: 8%;
   position: absolute;
   width: 53.4vw;
+}
+.stage.active {
+  display: flex;
+}
+.stage.active div {
+  align-content: space-evenly;
+  align-self: center;
+  background-color: rgb(206, 231, 206);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  padding: 1.3em 0.6em;
+  width: 100%;
+}
+.stage.active div button {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0.6em 1em;
+  margin: 0.4em 0.3em;
+  min-width: 8vw;
+}
+.stage.active div button:hover {
+  background-color: rgba(182, 220, 238, 0.4941176471);
+  border-color: rgba(141, 185, 206, 0.7137254902);
+  cursor: pointer;
+}
+.stage.active div button h3 {
+  color: #1f3f5f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+.stage.active div button img {
+  width: 8vw;
+  height: auto;
+}
+
+#web-open article.graphic {
+  display: none;
+}
+
+#graphic-open article.web {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

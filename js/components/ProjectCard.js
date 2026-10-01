@@ -1,5 +1,6 @@
 export class ProjectCard {
-    constructor(title, description, technologies, images) {
+    constructor(type, title, description, technologies, images) {
+        this.type = type;
         this.title = title;
         this.description = description;
         this.technologies = technologies;
@@ -7,6 +8,7 @@ export class ProjectCard {
     }
     render() {
         const card = document.createElement('article');
+        card.classList.add(this.type);
         const h3 = document.createElement('h3');
         h3.textContent = this.title;
         card.appendChild(h3);

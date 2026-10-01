@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.6 173.23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5f786f;
+        font-family: ErasITC-Bold, 'Eras Bold ITC';
+        font-size: 50.75px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #f1eae4;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #aaa1ad;
+        stroke-linecap: square;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-4 {
+        fill: #fdebbc;
+        stroke: #6b6054;
+      }
+
+      .cls-5 {
+        fill: #aaa1ad;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <path class="cls-4" d="M197.1,42.54v120.1c0,4.47-3.62,8.09-8.09,8.09H34.61c-4.47,0-8.09-3.62-8.09-8.09V14.11c0-4.47,3.62-8.09,8.09-8.09h51.79c5.76,0,11.28,2.29,15.35,6.36l15.71,15.71c4.07,4.07,9.59,6.36,15.35,6.36h56.2c4.47,0,8.09,3.62,8.09,8.09Z"/>
+        <g>
+          <polygon class="cls-2" points="62.98 16.42 156.23 2.62 182.12 21.85 185.16 42.35 69.35 59.49 62.98 16.42"/>
+          <path class="cls-5" d="M155.57,5.25l24.23,17.99,2.52,17.01-110.86,16.41-5.64-38.12,89.75-13.28h0ZM156.89,0L60.14,14.32l7.1,48.01,120.76-17.87-3.55-24L156.89,0h0Z"/>
+        </g>
+        <polyline class="cls-3" points="155.14 3.32 158.69 27.32 182.7 23.77"/>
+        <path class="cls-4" d="M197.1,42.54v120.1c0,4.47-3.62,8.09-8.09,8.09H10.59c-4.47,0-8.09-3.62-8.09-8.09V14.11c0-4.47,3.62-8.09,8.09-8.09h51.79c5.76,0,11.28,2.29,15.35,6.36l15.71,15.71c4.07,4.07,9.59,6.36,15.35,6.36h80.22c4.47,0,8.09,3.62,8.09,8.09Z"/>
+      </g>
+      <text class="cls-1" transform="translate(52.09 115.23)"><tspan x="0" y="0">&lt;...&gt;</tspan></text>
+    </g>
+  </g>
+</svg>

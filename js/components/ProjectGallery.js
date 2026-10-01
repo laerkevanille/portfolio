@@ -1,4 +1,4 @@
-import { ProjectCard } from './ProjectCard.js'; // The missing piece
+import { ProjectCard } from './ProjectCard.js';
 
 export class ProjectGallery {
     constructor(projects = []) {
@@ -10,6 +10,7 @@ export class ProjectGallery {
         gallery.classList.add('project-gallery');
         this.projects.forEach(project => {
             const projectCard = new ProjectCard(
+                project.type,
                 project.title,
                 project.description,
                 project.technologies,

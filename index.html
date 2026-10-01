@@ -14,8 +14,21 @@
 <body class="toggle">
 
     <header>
-        <h1>LÆRKE VAN<span>i</span>LLE</h1>
-        <p>Creative Developer to-be</p>
+        <div class="title-group">
+            <h1>LÆRKE VAN<span>i</span>LLE</h1>
+            <div>
+                <p>Creative Developer to-be</p>
+                <button id="themebtn-main" class="toggle-theme"><div class="sun"><i class="fa-solid fa-sun"></i></div><div class="moon"><i class="fa-solid fa-moon"></i></div></button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Om mig</a></li>
+                <li><a href="#">Mine projekter</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+        
     </header>
 
     <main>
@@ -24,24 +37,19 @@
             <div class="content toggle" id="content">
                 <div class="desk toggle" id="desk-bg">
 
-                    <button id="lamp-switch" class="toggle"></button>
+                    <button id="lamp-switch" class="toggle toggle-theme"></button>
 
-                    <section class="stage active">
+                    <div class="stage-wrap">
 
-                        <div class="folders">
-                            <button class="folder1"></button>
-                            <button class="folder2"></button>
-                            <button class="folder3"></button>
-                            <button class="folder4"></button>
-                        </div>
+                        <section class="stage active">
 
-                    </section>
+                        </section>
+                    </div>
+                
 
                 </div>
             </div>
         </section>
-
-         <div id="pc-content"></div>
 
     </main>
 
