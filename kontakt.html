@@ -18,8 +18,8 @@
         <section class="header-top">
             <h1><a href="index.html">LÆRKE VAN<span>i</span>LLE</a></h1>
             <section class="header-topright">
-                <button id="themebtn-main" class="toggle-theme"><div class="sun"><i class="fa-solid fa-sun"></i></div><div class="moon"><i class="fa-solid fa-moon"></i></div></button>
-                <nav>
+                <button id="themebtn-main" class="toggle-theme toggle"><div class="sun toggle"><i class="fa-solid fa-sun toggle"></i></div><div class="moon toggle"><i class="fa-solid fa-moon toggle"></i></div></button>
+                <nav id="nav" class="toggle">
                     <ul>
                         <li><a href="om-mig.html">Om mig</a></li>
                         <li><a href="projekter.html">Mine projekter</a></li>
@@ -31,6 +31,58 @@
         <p>Creative Developer to-be</p>
         
     </header>
+
+    <main>
+
+        <h2>Lad os snakke sammen!</h2>
+
+        <section class="contact-wrap">
+
+            <section class="contact-info">
+
+                <h3>Kontaktinfo</h3>
+
+                <ul>
+                    <li><address aria-label="email"><i class="fa-solid fa-envelope"></i>: <a href="mailto:lvlemmeryfunch@gmail.com">lvlemmeryfunch@gmail.com</a></address></li>
+                    <li><address aria-label="telefon"><i class="fa-solid fa-phone"></i>: <span>+45 52 90 50 18</span></address></li>
+                    <li><p><i class="fa-brands fa-square-linkedin"></i>: <a href="https://www.linkedin.com/in/laerkevanille/">@laerkevanille</a></p></li>
+                </ul>
+
+            </section>
+        
+            <form class="contact">
+
+                <p><span>*</span>Skal udfyldes</p>
+
+                <div class="navn">
+                    <label for="navn">Navn<span>*</span></label>
+                    <input type="text" name="navn" id="navn" autocomplete="name" placeholder="Indtast navn" required>
+                </div>
+
+                <div class="email">
+                    <label for="email">E-mail<span>*</span></label>
+                    <input type="email" id="email" autocomplete="email" placeholder="Indtast e-mail" required>
+                </div>
+
+                <div class="besked">
+                    <label for="besked">Besked<span>*</span></label>
+                    <textarea name="besked" id="besked" placeholder="Skriv din besked her" required></textarea>
+                </div>
+
+                <div class="submit">
+                    <label for="submit" class="visually-hidden">Send besked</label>
+                    <input type="submit" id="submit" value="Send besked">
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="toggle">Copyright <i class="fa-regular fa-copyright"></i>2026 <a href="om-mig.html">Lærke Vanille Emmery-Funch</a></p>
+    </footer>
     
 </body>
 </html>

@@ -26,7 +26,7 @@ export const categories = [
         ],
         title: "Projekter",
         id: "projects-folder"
-    }, {
+    }/*, {
         images: [
             {
                 src: "img/process.svg",
@@ -35,5 +35,5 @@ export const categories = [
         ],
         title: "Min Proces",
         id: "process-folder"
-    }, 
+    }*/
 ];

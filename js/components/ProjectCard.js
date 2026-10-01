@@ -54,7 +54,7 @@ export class ProjectCard {
         const moreLink = document.createElement('a');
         moreLink.href = this.readMore;
         const moreBtn = document.createElement('div');
-        moreBtn.classList.add('more-btn')
+        moreBtn.classList.add('more-btn');
         const moreTxt = document.createElement('p');
         moreTxt.textContent = "Læs mere...";
         moreBtn.appendChild(moreTxt);

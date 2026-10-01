@@ -3,30 +3,45 @@ import { categories } from './data/categories.js';
 
 const categoryGallery = new CategoryGallery(categories);
 
-import { ProjectGallery } from './components/ProjectGallery.js';
-import { projects } from './data/projects.js';
+import { PersonGallery } from './components/PersonGallery.js';
+import { people } from './data/people.js';
 
-const projectGallery = new ProjectGallery(projects);
+const personGallery = new PersonGallery(people);
+
+import { SkillGallery } from './components/SkillGallery.js';
+import { skills } from './data/skills.js';
+
+const skillGallery = new SkillGallery(skills);
 
 import { SubcategoryGallery } from './components/SubcategoryGallery.js';
 import { subcategories } from './data/subcategories.js';
 
 const subcategoryGallery = new SubcategoryGallery(subcategories);
 
+import { ProjectGallery } from './components/ProjectGallery.js';
+import { projects } from './data/projects.js';
+
+const projectGallery = new ProjectGallery(projects);
+
+
 
 const toggleBtns = document.querySelectorAll(".toggle-theme");
 
 function toggleTheme() {
-    document.body.classList.toggle("dark");
-    document.getElementById("themebtn-main").classList.toggle("dark");
-    document.getElementById("content-wrapper").classList.toggle("dark");
-    document.getElementById("content").classList.toggle("dark");
-    document.getElementById("desk-bg").classList.toggle("dark");
-    document.getElementById("nav").classList.toggle("dark");
+    document.querySelectorAll(".toggle").forEach(tgl => {
+        tgl.classList.toggle("dark");
+    });
 };
 
 toggleBtns.forEach(btn => {
     btn.addEventListener("click", toggleTheme);
+});
+
+const lampAudio = new Audio('../aud/lamp.mp3');
+
+const lampSound = document.getElementById("lamp-switch");
+lampSound.addEventListener("click", () => {
+    lampAudio.play();
 });
 
 
@@ -80,11 +95,17 @@ const nextStage = (e) => {
     switch (button.id) {
 
         case "about-folder":
-            showStage("about-open");
+            showStage(
+                "about-open", 
+                personGallery.render()
+            );
             break;
 
         case "skills-folder":
-            showStage("skills-open");
+            showStage(
+                "skills-open", 
+                skillGallery.render()
+            );
             break;
 
         case "projects-folder":
@@ -94,9 +115,9 @@ const nextStage = (e) => {
             );
             break;
 
-        case "process-folder":
+        /*case "process-folder":
             showStage("process-open");
-            break;
+            break;*/
 
         case "web-folder":
             showStage(
@@ -118,3 +139,13 @@ const nextStage = (e) => {
 };
 
 stageWrap.addEventListener("click", nextStage);
+
+const profileAudio = new Audio('../aud/meow.mp3');
+
+stageWrap.addEventListener("click", (e) => {
+    const profileSound = e.target.closest("#meow");
+
+    if (!profileSound) return;
+
+    profileAudio.play();
+});
