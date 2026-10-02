@@ -24,6 +24,13 @@ import { projects } from './data/projects.js';
 const projectGallery = new ProjectGallery(projects);
 
 
+const aboutSkills = document.getElementById("about-skills");
+
+if (aboutSkills) {
+    aboutSkills.appendChild(skillGallery.render());
+}
+
+
 
 const toggleBtns = document.querySelectorAll(".toggle-theme");
 

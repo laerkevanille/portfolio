@@ -16,7 +16,7 @@ export const skills = [
             }
         ],
         title: "Figma",
-        level: "Intermediate / Advanced"
+        level: "Adept / Advanced"
     }, {
         images: [
             {
@@ -25,7 +25,7 @@ export const skills = [
             }
         ],
         title: "HTML5",
-        level: "Intermediate / Advanced"
+        level: "Adept / Advanced"
     }, {
         images: [
             {
@@ -34,7 +34,7 @@ export const skills = [
             }
         ],
         title: "CSS3",
-        level: "Intermediate / Advanced"
+        level: "Adept / Advanced"
     }, {
         images: [
             {

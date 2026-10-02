@@ -35,6 +35,7 @@ export class PersonCard {
 
         const moreLink = document.createElement('a');
         moreLink.href = this.readMore;
+        moreLink.ariaLabel = "Om mig underside";
         const moreBtn = document.createElement('div');
         moreBtn.classList.add('profile-more');
         const moreTxt = document.createElement('p');

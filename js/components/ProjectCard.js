@@ -30,6 +30,8 @@ export class ProjectCard {
         if (this.url != undefined) {
             const a = document.createElement('a');
             a.href = this.url;
+            a.target = "_blank";
+            a.ariaLabel = "produkthjemmeside";
             a.classList.add('project-link');
             const linkTxt = document.createElement('p');
             linkTxt.textContent = "Åbn hjemmeside";
@@ -53,6 +55,7 @@ export class ProjectCard {
 
         const moreLink = document.createElement('a');
         moreLink.href = this.readMore;
+        moreLink.ariaLabel = "Projekter underside";
         const moreBtn = document.createElement('div');
         moreBtn.classList.add('more-btn');
         const moreTxt = document.createElement('p');
